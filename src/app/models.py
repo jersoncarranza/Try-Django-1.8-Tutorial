@@ -7,7 +7,8 @@ class SignUp(models.Model):
 	timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
 	updated   = models.DateTimeField(auto_now_add=False, auto_now=True)
 
-	def __str__(self):
+	#def __unicode__(self):  #python 2.7
+	def __str__(self): # python 3.3
 		return self.full_name
 		#return str(self.timestamp)
 
