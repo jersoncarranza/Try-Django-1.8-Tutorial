@@ -6,3 +6,4 @@ class SignUpForm(forms.ModelForm):
 		model  = SignUp
 		fields = ['full_name','email']
 		#exclude = ['full_name']
+		#Esto es una prueba
